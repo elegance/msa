@@ -1,0 +1,9 @@
+endpoints:
+  actuator:
+    enabled: true
+  metrics:
+    enabled: true
+  docs:
+    enabled: true
+  health:
+    sensitive: true  
