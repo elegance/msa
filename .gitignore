@@ -2,4 +2,6 @@ bin/
 .settings
 .classpath
 .project
+.factorypath
+.springBeans
 node_modules

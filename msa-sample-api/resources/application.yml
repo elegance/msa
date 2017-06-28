@@ -1,0 +1,7 @@
+server:
+  address: 127.0.0.1
+  port: 8080
+
+# 自定义用到的配置  
+register:
+  servers=127.0.0.1:2181 
