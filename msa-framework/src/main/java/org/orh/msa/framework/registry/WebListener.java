@@ -1,4 +1,4 @@
-package org.orh.msa.sample;
+package org.orh.msa.framework.registry;
 
 import java.util.Map;
 
@@ -6,7 +6,6 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
-import org.orh.msa.framework.registry.ServiceRegistry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
@@ -20,7 +19,7 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 public class WebListener implements ServletContextListener {
 
 	@Value("${server.address}")
-	private String serverAddress;
+	private String serverAddress = "127.0.0.1";
 
 	@Value("${server.port}")
 	private int serverPort;

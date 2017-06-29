@@ -3,5 +3,5 @@ server:
   port: 8080
 
 # 自定义用到的配置  
-register:
+registry:
   servers=127.0.0.1:2181 
