@@ -19,7 +19,7 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 public class WebListener implements ServletContextListener {
 
 	@Value("${server.address}")
-	private String serverAddress = "127.0.0.1";
+	private String serverAddress;
 
 	@Value("${server.port}")
 	private int serverPort;
