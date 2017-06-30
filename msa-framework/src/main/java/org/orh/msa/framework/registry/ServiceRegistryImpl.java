@@ -9,9 +9,7 @@ import org.apache.zookeeper.ZooDefs;
 import org.apache.zookeeper.ZooKeeper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
 
-@Component
 public class ServiceRegistryImpl implements ServiceRegistry, Watcher {
 
 	private static Logger logger = LoggerFactory.getLogger(ServiceRegistryImpl.class);
@@ -23,9 +21,6 @@ public class ServiceRegistryImpl implements ServiceRegistry, Watcher {
 	private static final String REGISTRY_PATH = "/registry";
 
 	private ZooKeeper zk;
-
-	public ServiceRegistryImpl() {
-	}
 
 	public ServiceRegistryImpl(String zkServers) {
 		try {
