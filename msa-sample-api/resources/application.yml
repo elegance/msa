@@ -4,4 +4,4 @@ server:
 
 # 自定义用到的配置  
 registry:
-  servers=127.0.0.1:2181 
+  servers: 127.0.0.1:2181 
