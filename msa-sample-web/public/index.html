@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+</head>
+
+<body>
+    <div id="console"></div>
+    <script>
+        !function () {
+            fetch('/hello', {
+            // fetch('http://127.0.0.1:8080/hello', { // 后台的服务要有跨域响应头，比如添加给 application 添加 @CrossOrigin注解
+                method: 'GET',
+                headers: {
+                    'Service-Name': 'HelloService'
+                }
+            }).then(response => {
+                response.text().then(text => {
+                    document.querySelector('#console').textContent = text;
+                });
+            }).catch(reason => {
+                console.log(reason);
+            });
+        }();
+    </script>
+</body>
+
+</html>
